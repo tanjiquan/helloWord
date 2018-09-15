@@ -25,8 +25,13 @@ public class MyServer1 extends JFrame implements ActionListener{
 
     public static void main(String [] args){
         MyServer1 ms = new MyServer1();
+        ms.createChat();
     }
     public MyServer1(){
+
+    }
+
+    public void createChat(){
         jta = new JTextArea();
         jtf = new JTextField(20);
         jb= new JButton("发送");
@@ -38,7 +43,7 @@ public class MyServer1 extends JFrame implements ActionListener{
         jpl.add(jb);
         this.add(jsp,"Center");
         this.add(jpl,"South");
-        this.setTitle("你好吗");
+        this.setTitle("服务端");
         this.setSize(400,300);
         this.setVisible(true);
         //服务器监听

@@ -25,9 +25,14 @@ public class MyClient1 extends JFrame implements ActionListener {
 
     public static void main(String [] args){
         MyClient1 mc = new MyClient1();
+        mc.createChat();
     }
 
     public MyClient1(){
+
+    }
+
+    public void createChat(){
         jta = new JTextArea();
         jtf = new JTextField(20);
         jb= new JButton("发送");
@@ -61,8 +66,6 @@ public class MyClient1 extends JFrame implements ActionListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 
     public void actionPerformed(ActionEvent e) {
