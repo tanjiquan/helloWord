@@ -35,9 +35,12 @@ public class MyServer1 extends JFrame implements ActionListener{
         jta = new JTextArea();
         jtf = new JTextField(20);
         jb= new JButton("发送");
+
         jb.addActionListener(this);
+
         jpl = new JPanel();
         jsp = new JScrollPane(jta);
+
         jpl.add(jtf);
         //jpl.add(jta);
         jpl.add(jb);

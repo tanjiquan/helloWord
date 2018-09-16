@@ -14,10 +14,15 @@ import javax.swing.*;
 
 public class MyClient1 extends JFrame implements ActionListener {
 
+    //文本区域
     JTextArea jta = null;
+    //文本框
     JTextField jtf = null;
+    //按钮
     JButton jb = null;
+    //面板容器
     JPanel jpl= null;
+
     JScrollPane jsp = null;
     //把信息发给客户端的对象
     PrintWriter pw =null;
@@ -36,9 +41,12 @@ public class MyClient1 extends JFrame implements ActionListener {
         jta = new JTextArea();
         jtf = new JTextField(20);
         jb= new JButton("发送");
+
         jb.addActionListener(this);
+
         jpl = new JPanel();
         jsp = new JScrollPane(jta);
+
         jpl.add(jtf);
         //jpl.add(jta);
         jpl.add(jb);
